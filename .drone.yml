@@ -17,6 +17,9 @@ steps:
   image: alpine
   commands:
   - echo bonjour monde
+  depends_on:
+  - greeting
+  - en
 
 ---
 kind: pipeline
