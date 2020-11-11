@@ -8,7 +8,7 @@ steps:
   commands:
   - echo hello
   - echo world
-  - sleep 10
+  - sleep 30
 - name: en
   image: alpine
   commands:
@@ -29,6 +29,7 @@ steps:
   commands:
   - echo hello
   - echo world
+  - sleep 30
 - name: en
   image: alpine
   commands:
@@ -49,7 +50,6 @@ steps:
   commands:
   - echo hello
   - echo world
-  - sleep 10
 - name: en
   image: alpine
   commands:
