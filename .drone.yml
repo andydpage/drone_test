@@ -9,6 +9,7 @@ steps:
   - echo hello
   - echo world
   - sleep 30
+  - echo $DRONE_BRANCH
 - name: en
   image: alpine
   commands:
