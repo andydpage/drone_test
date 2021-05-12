@@ -8,7 +8,7 @@ steps:
   pull: if-not-exists
   commands:
   - ls -la
-  - ls -l .git
+  - ls -l .git/config
   - git remote -v
   - echo ${DRONE_BRANCH}
   - echo ${GIT_AUTHOR_NAME} 
