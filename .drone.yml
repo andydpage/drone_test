@@ -7,8 +7,6 @@ steps:
   image: alpine/git
   commands:
   - ls -l
-  - git add --all
-  - git commit --all -m 'pushed by Drone [CI SKIP]'
   - git remote -v
   - echo ${DRONE_BRANCH}
   - echo ${GIT_AUTHOR_NAME} 
