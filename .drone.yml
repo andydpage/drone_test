@@ -38,16 +38,19 @@ name: Pipeline-2
 steps:
 - name: greeting
   image: alpine
+  pull: if-not-exists
   commands:
   - echo hello
   - echo world
   - sleep 5
 - name: en
   image: alpine
+  pull: if-not-exists
   commands:
   - echo hello world
 - name: fr
   image: alpine
+  pull: if-not-exists
   commands:
   - echo bonjour monde
 
