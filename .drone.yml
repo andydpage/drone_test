@@ -11,6 +11,7 @@ steps:
   - pwd
   - ls -la
   - cat .git/config
+  - git config --global -l
   - git remote -v
   - echo ${DRONE_BRANCH}
   - echo ${GIT_AUTHOR_NAME} 
