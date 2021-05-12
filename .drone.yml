@@ -10,6 +10,10 @@ steps:
   - echo world
   - sleep 5
   - echo ${DRONE_BRANCH}
+  - echo ${GIT_AUTHOR_NAME} 
+  - echo ${GIT_AUTHOR_EMAIL} 
+  - echo ${GIT_COMMITTER_NAME} 
+  - echo ${GIT_COMMITTER_EMAIL} 
 - name: en
   image: alpine
   commands:
