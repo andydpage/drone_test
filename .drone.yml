@@ -15,7 +15,7 @@ steps:
   - echo ${GIT_COMMITTER_NAME} 
   - echo ${GIT_COMMITTER_EMAIL} 
   - echo ${GIT_ASKPASS}
-  - echo ${SSH_ASKPASS}  
+  - echo ${SSH_ASKPASS}
 - name: en
   image: alpine
   commands:
