@@ -18,10 +18,12 @@ steps:
   - echo ${SSH_ASKPASS}
 - name: en
   image: alpine
+  pull: if-not-exists
   commands:
   - echo hello world
 - name: fr
   image: alpine
+  pull: if-not-exists
   commands:
   - echo bonjour monde
   depends_on:
@@ -57,14 +59,17 @@ name: Pipeline-3
 steps:
 - name: greeting
   image: alpine
+  pull: if-not-exists
   commands:
   - echo hello
   - echo world
 - name: en
   image: alpine
+  pull: if-not-exists
   commands:
   - echo hello world
 - name: fr
   image: alpine
+  pull: if-not-exists
   commands:
   - echo bonjour monde
