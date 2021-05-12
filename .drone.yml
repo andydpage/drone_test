@@ -5,6 +5,7 @@ name: Pipeline-1
 steps:
 - name: greeting
   image: alpine/git
+  pull: if-not-exists
   commands:
   - ls -la
   - git remote -v
